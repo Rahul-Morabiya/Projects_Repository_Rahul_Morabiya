@@ -26,9 +26,4 @@ Technologies: Python, Keras, TensorFlow, Kaggle
 Description:
 This project focuses on creating a framework for lung cancer detection using deep learning and federated learning algorithms. By implementing ResNet152V2 for image classification, the project achieves significant accuracy in detecting lung cancer, with comparisons across different federated learning algorithms.
 
-Key Features:
 
-Implementation of Federated Learning algorithms (FedAvg, FedProx, FedAdagrad)
-Use of ResNet152V2 neural network for image classification
-Evaluation using metrics such as accuracy, recall, precision, and AUC
-Achieved 89% accuracy with federated models
