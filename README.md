@@ -10,9 +10,9 @@ This project involves analyzing Falcon 9 and Falcon Heavy launch data to develop
 
 Key Features:
 
-Data analysis and preprocessing
-Model training and evaluation
-Deployment on a web application using Dash
+  Data analysis and preprocessing
+  Model training and evaluation
+  Deployment on a web application using Dash
 
 2. Hotel Booking App
 Technologies: MongoDB, Express.js, React.js, Node.js, Cloudinary, TypeScript
@@ -21,10 +21,10 @@ A full-featured hotel booking application built using the MERN stack. This proje
 
 Key Features:
 
-Secure authentication with HTTP cookies and JWT
-Image uploads for hotel listings
-Advanced search, sort, and filter functionalities
-Automated end-to-end testing
+  Secure authentication with HTTP cookies and JWT
+  Image uploads for hotel listings
+  Advanced search, sort, and filter functionalities
+  Automated end-to-end testing
 
 3. YouTube App
 Technologies: JavaScript, RapidAPI, Express.js, React.js, Node.js, Material-UI
@@ -33,10 +33,10 @@ A YouTube clone application developed with RapidAPI for seamless data integratio
 
 Key Features:
 
-Video playback and search functionality
-Tag-based filtering for video content
-Responsive design with Material UI
-Deployed on Netlify for optimized performance
+  Video playback and search functionality
+  Tag-based filtering for video content
+  Responsive design with Material UI
+  Deployed on Netlify for optimized performance
 
 
 4. Lung Cancer Detection with Federated Learning Algorithms & ResNet Model
