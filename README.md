@@ -8,7 +8,7 @@ Technologies: Python, Jupyter Notebook
 Description:
 This project involves analyzing Falcon 9 and Falcon Heavy launch data to develop predictive models for rocket landing success. Various machine learning models, including SVM, Decision Trees, and Logistic Regression, were evaluated. The best model was deployed on a Dash web application for interactive visualization and predictions.
 
-Key Features:
+  Key Features:
 
   Data analysis and preprocessing
   Model training and evaluation
@@ -19,7 +19,7 @@ Technologies: MongoDB, Express.js, React.js, Node.js, Cloudinary, TypeScript
 Description:
 A full-featured hotel booking application built using the MERN stack. This project includes secure user authentication, image upload integration with Cloudinary, and comprehensive search, sort, and filter functionalities to enhance the user experience.
 
-Key Features:
+  Key Features:
 
   Secure authentication with HTTP cookies and JWT
   Image uploads for hotel listings
@@ -31,7 +31,7 @@ Technologies: JavaScript, RapidAPI, Express.js, React.js, Node.js, Material-UI
 Description:
 A YouTube clone application developed with RapidAPI for seamless data integration. This project features video playback, robust search functionality, and tag-based filtering, all wrapped in a responsive design using Material UI components.
 
-Key Features:
+  Key Features:
 
   Video playback and search functionality
   Tag-based filtering for video content
