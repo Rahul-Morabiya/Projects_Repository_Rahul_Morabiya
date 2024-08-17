@@ -1,4 +1,5 @@
-Rahul Morabiya's Project Repository
+## Rahul Morabiya's Project Repository
+
 Welcome to my project repository! This repository contains a collection of projects that I've worked on, showcasing my skills in software development, machine learning, web development, and data science. Each project is organized into its own directory with all the necessary files, including code, documentation, and any related resources.
 
 Projects Overview
