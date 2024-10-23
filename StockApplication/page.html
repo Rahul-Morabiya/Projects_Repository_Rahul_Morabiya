@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Valuation Systems</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Inventory Valuation Systems</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSystem('lifo')">LIFO</a></li>
+                <li><a href="#" onclick="showSystem('fifo')">FIFO</a></li>
+                <li><a href="#" onclick="showSystem('average')">Average</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Welcome to the Inventory Valuation Systems</h2>
+        <p>Use the system to calculate and manage stock values using LIFO, FIFO, or Average methods. You can add new stock purchases, issue stock, return stock, and view transaction history.</p>
+    </section>
+
+    <section id="calculator">
+        <!-- LIFO Section -->
+        <div class="method" id="lifo" style="display:none;">
+            <h3>LIFO (Last In, First Out) System</h3>
+            
+            <button class="show-form" onclick="toggleForm('lifoPurchaseForm')">Add Purchase</button>
+            <div class="form-section" id="lifoPurchaseForm" style="display:none;">
+                <form>
+                    <label for="lifoDate">Date:</label>
+                    <input type="date" id="lifoDate"><br>
+                    <label for="lifoQuantity">Quantity:</label>
+                    <input type="number" id="lifoQuantity"><br>
+                    <label for="lifoCost">Cost per Unit (Rs):</label>
+                    <input type="number" id="lifoCost" step="0.01"><br>
+                    <button type="button" onclick="addPurchase('lifo')">Submit</button>
+                </form>
+            </div>
+            
+            <button class="show-form" onclick="toggleForm('lifoIssueForm')">Issue Stock</button>
+            <div class="form-section" id="lifoIssueForm" style="display:none;">
+                <form>
+                    <label for="lifoIssueQuantity">Quantity to Issue:</label>
+                    <input type="number" id="lifoIssueQuantity"><br>
+                    <button type="button" onclick="issueStock('lifo')">Submit</button>
+                    <button type="button" onclick="returnStock('lifo')">Return Stock</button>
+                </form>
+            </div>
+
+            <div>
+                <h4>Transaction History</h4>
+                <div id="lifoTransaction"></div>
+            </div>
+
+            <div>
+                <h4>Current Stock Balance</h4>
+                <div id="lifoBalance"></div>
+            </div>
+        </div>
+
+        <!-- FIFO Section -->
+        <div class="method" id="fifo" style="display:none;">
+            <h3>FIFO (First In, First Out) System</h3>
+            
+            <button class="show-form" onclick="toggleForm('fifoPurchaseForm')">Add Purchase</button>
+            <div class="form-section" id="fifoPurchaseForm" style="display:none;">
+                <form>
+                    <label for="fifoDate">Date:</label>
+                    <input type="date" id="fifoDate"><br>
+                    <label for="fifoQuantity">Quantity:</label>
+                    <input type="number" id="fifoQuantity"><br>
+                    <label for="fifoCost">Cost per Unit (Rs):</label>
+                    <input type="number" id="fifoCost" step="0.01"><br>
+                    <button type="button" onclick="addPurchase('fifo')">Submit</button>
+                </form>
+            </div>
+
+            <button class="show-form" onclick="toggleForm('fifoIssueForm')">Issue Stock</button>
+            <div class="form-section" id="fifoIssueForm" style="display:none;">
+                <form>
+                    <label for="fifoIssueQuantity">Quantity to Issue:</label>
+                    <input type="number" id="fifoIssueQuantity"><br>
+                    <button type="button" onclick="issueStock('fifo')">Submit</button>
+                    <button type="button" onclick="returnStock('fifo')">Return Stock</button>
+                </form>
+            </div>
+
+            <div>
+                <h4>Transaction History</h4>
+                <div id="fifoTransaction"></div>
+            </div>
+
+            <div>
+                <h4>Current Stock Balance</h4>
+                <div id="fifoBalance"></div>
+            </div>
+        </div>
+
+        <!-- Average Section -->
+        <div class="method" id="average" style="display:none;">
+            <h3>Average Cost System</h3>
+            
+            <button class="show-form" onclick="toggleForm('averagePurchaseForm')">Add Purchase</button>
+            <div class="form-section" id="averagePurchaseForm" style="display:none;">
+                <form>
+                    <label for="averageDate">Date:</label>
+                    <input type="date" id="averageDate"><br>
+                    <label for="averageQuantity">Quantity:</label>
+                    <input type="number" id="averageQuantity"><br>
+                    <label for="averageCost">Cost per Unit (Rs):</label>
+                    <input type="number" id="averageCost" step="0.01"><br>
+                    <button type="button" onclick="addPurchase('average')">Submit</button>
+                </form>
+            </div>
+
+            <button class="show-form" onclick="toggleForm('averageIssueForm')">Issue Stock</button>
+            <div class="form-section" id="averageIssueForm" style="display:none;">
+                <form>
+                    <label for="averageIssueQuantity">Quantity to Issue:</label>
+                    <input type="number" id="averageIssueQuantity"><br>
+                    <button type="button" onclick="issueStock('average')">Submit</button>
+                    <button type="button" onclick="returnStock('average')">Return Stock</button>
+                </form>
+            </div>
+
+            <div>
+                <h4>Transaction History</h4>
+                <div id="averageTransaction"></div>
+            </div>
+
+            <div>
+                <h4>Current Stock Balance</h4>
+                <div id="averageBalance"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Stock Calculation System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
